@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+	<head> 
+		<title>Web Design Checklist</title>
+		<link href="css/reset.css" type="text/css" rel="stylesheet"> 
+		<link href="css/checklist.css" type="text/css" rel="stylesheet"> 
+	  	<meta charset="utf-8">
+	</head>
+	<body>
+		<div class=container>
+			<header>
+				<div class="text-center">
+					<h1>The Web Designer's Checklist</h1>
+					<nav>
+						<ul>
+							<li class="first"><a href"#Tech Specs">HTML</a></li>
+							<li><a href"#CSS">CSS</a></li>
+							<li><a href"#Tech-Specs">Tech Specs</a></li>
+							<li><a href"#Content">Content</a></li>
+							<li><a href"#Design">Design Foundations</a></li>
+							<li><a href"#Images">Saving Images</a></li>
+							<li><a href"#Accessibility">Accessibility</a></li>
+							<li><a href"#Validate">Validate</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+ 			<section>
+				<h2 id="HTML">HTML</h2>
+				<ul>
+					<li>Did you include <!DOCTYPE html> at the top of the html document?</li>
+					<li>Did you include a language specification?
+					<li>Did you specify a meta tag?</li>
+					<li>Is your CSS reset file<span class="italics"> before</span> the CSS file?</li>
+					<li>Also, do you have a CSS reset or normalize file? You should.</li>
+					<li>Are br tags used for type purposes only?</li>
+					<li>Did you include alt tags for all images?</li>
+					<li>Is the h1 tag used only once?</li>
+					<li>Is there a containing div? If not, GET ONE.</li>
+					<li>Are all characters coded?</li>
+					<li>Does anything reside between ul tags and li tags? If so, GET RID OF IT.</li>
+					<li>Are any id tags used only <span class="bold">once</span>?</li>
+					<li>Are all class and id tags labeled based on content, not style?</li>
+					<li>Are all assets referenced correctly?</li>
+					<li>Is the html document indented and spaced correctly?</li>
+				</ul>
+			</section>
+			<section>
+				<h2 id="CSS">CSS</h2>
+				<ul>
+					<li>Are all elements, classes and ids categorized correctly?</li>
+				<li>Category Examples
+					<ul class="indent">
+						<li>Grid</li>
+						<li>Clearfix</li>
+						<li>Typography</li>
+						<li>Buttons</li>
+						<li>Header</li>
+						<li>Nav</li>
+						<li>Footer</li>
+					</ul>
+				</li>
+					<li>Are all units correctly labeled?</li>
+					<li>Are all brackets closed?</li>
+					<li>Is the CSS document indented and spaced correctly in a readable manner?</li>
+				</ul>
+			</section>
+			<section>
+				<h2 id="Tech-Specs">Technical Specifications and File Management</h2>
+				<ul>
+					<li>Is the first file named index.html?</li>
+					<li>Are style sheets in a separate folder?</li>
+					<li>Are assets in a separate folder?</li>
+					<li>
+						<ul>
+							<li>Are assets labeled clearly and based on content?</li>
+						</ul>
+					</li>
+					<li>Are all versions clearly labeled?</li>
+					<li>Have you deleted any unnecessary files?</li>
+				</ul>
+			</section>
+			<section>
+				<h2 id="Content">Content</h2>
+				<ul>
+					<li>Is the content yours?</li>
+					<li>
+						<ul>
+							<li>If not, have you clearly credited the author?</li>
+						</ul>
+					</li>
+					<li>Is the content clearly written and easy to understand?</li> 
+					<li>Is the content the focus of the site?</li>
+				</ul>
+			</section>
+			<section>
+				<h2 id="Design">Design Foundations</h2>
+				<h3>Grid</h3>
+					<ul>
+						<li>Is this site &#40;mostly&#41; aligned to a grid?</li>
+						<li>Is there a sufficient amount of whitespace, created with margins and padding?</li>
+						<li>Were Gestalt Theory Principles considered with the overall design?</li>
+					</ul>
+				<h3>Typography</h3>
+					<ul>
+						<li>Do the fonts work well together?</li>
+						<li class="none">
+							<ul class="indent">
+								<li>Are you sure?</li>
+								<li>Do the x-heights match?</li>
+								<li>Do they set the tone for the content?</li>
+							</ul>
+						<li>Do you have these five properties styled for each typographic element in your CSS?
+							<ol class="indent">
+								<li>Font-family, including second, third and fourth options</li>
+								<li>Font-size &#40;at least 16px for web&#41;</li>
+								<li>Line-height &#40;140&#37; minimum, but ultimately based on font-size.&#41;</li>
+								<li>Color</li>
+								<li>Max-Width: 45 to 90 characters per line</li>
+							</ol>
+						</li>
+					</ul>
+				<h3>Color Theory</h3>
+					<ul>
+						<li>Do the colors reflect your message?</li>
+						<li>Test the <a href="#">color contrast</a> of your type and background colors</li>
+						<li>Test for <a href="#">color blindess</a> compatibility</li>
+					</ul>
+				<h3>Style Tiles</h3>
+					<ul>
+						<li>Does the site use these elements consistently, repeatedly and correctly?</li>
+					</ul>
+					<ul class="style-tile">
+						<li class="first">Colors</li>
+						<li>Textures</li>
+						<li>Buttons</li>
+						<li>Icons</li>
+						<li>Arrows</li>
+						<li>Type Specimen</li>
+						<li>Divider</li>
+						<li>Logo</li>
+					</ul>
+			</section>
+			<section>
+				<h2 id="Images">Saving Images</h2>
+				<ul>
+					<li>Follow this order when saving images for the web:</li>
+					<li class="none">
+						<ol class="indent">
+							<li>Make sure all images are sized proportionally.</li>
+							<li>Crop images proportionally and carefully to fit size specifications.</li>
+							<li>Choose the best filetype for your image</li>
+							<li>Use the Save For Web feature on Adobe Illustrator or Photoshop. Here you can alter the quality, size and preset. Choose the correct filetype with the lowest quality setting that will still produce a clear image on the web.</li> 
+						</ol>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 id="Accessibility">Accessibility/Usability</h2>
+				<ul>
+					<li>Consult the <a href="#"> A11y project usability checklist</a></li>
+				</ul>
+			</section>
+			<section class="none">
+				<h2 id="Validate">Validate</h2>
+				<ul>
+					<li>Validate that sucker!</li>
+					<li class="none">
+						<ul class="indent">
+							<li><a href="#">HTML Validator</a></li>
+							<li><a href="#">CSS Validator</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</body>
+</html>

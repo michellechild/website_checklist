@@ -1,0 +1,168 @@
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+
+div, header, nav, section, article, aside, footer, figure, hr{
+  position: relative;
+}
+
+body{
+  background-image: url(../assets/Wood_BW.jpg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container{
+  min-width: 960px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  margin: 100px;
+  background-color: #FFF;
+}
+
+.none {
+  list-style-type: none;
+  border-bottom: none;
+}
+
+.first {
+  padding-left: 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.clear{
+  clear: both;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+  font-family: "Helvetica Neue" Helvetica, Arial, sans-serif;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Helvetica Neue" Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #383838;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: "Helvetica Neue" Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #383838;
+  max-width: 500px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-family: "Franklin Gothic Book" Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 2;
+  color: #202020;
+  max-width: 650px;
+  list-style-position: outside;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-style: bold;
+}
+
+.indent li{
+  text-indent: 40px;
+  list-style-position: inside;
+  font-size: 20px;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+header {
+padding-top: 100px;
+padding-bottom: 50px;
+border-bottom: 5px #909090 solid;
+border-radius: 1px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+nav {
+margin: 0 auto;
+}
+
+nav li {
+  text-decoration: none;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+a {
+  color: #202020;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:visited {
+  color: #202020;
+}
+
+
+/*
+  ========================================
+  Sections
+  ========================================
+*/
+
+section {
+  padding: 50px 100px;
+  border-bottom: #999 3px solid;
+}
+
+.style-tile li{
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
