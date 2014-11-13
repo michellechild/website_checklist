@@ -107,40 +107,34 @@ p, li {
   text-indent: -1em; }
 
 li {
-  list-style-position: inside; }
+  list-style-position: inside;
+  list-style-type: disc; }
   li .indent {
+    list-style-type: circle;
     padding-left: 40px;
     text-indent: -1em;
     font-size: 18px; }
 
-header {
-  padding-left: 50px;
-  padding-right: 50px;
+header, section {
+  padding: 50px;
   border-bottom: 1px #dedede solid;
   border-radius: 1px; }
-
-section {
-  padding-left: 50px;
-  padding-right: 50px;
-  border-bottom: 1px #dedede solid;
-  border-radius: 1px;
-  padding-left: 50px; }
 
 nav {
   margin: 75px auto 0; }
   nav li {
     text-indent: 0;
     text-decoration: none;
-    padding-left: 15px;
+    padding-left: 30px;
     display: inline-block;
     font-size: 18px; }
 
 a {
   color: #993300;
   text-decoration: none; }
-  a a:hover {
+  a :hover {
     text-decoration: underline; }
-  a a:visited {
+  a :visited {
     color: #993300; }
 
 /*# sourceMappingURL=checklist.css.map */
