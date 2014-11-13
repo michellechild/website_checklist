@@ -123,12 +123,12 @@ nav {
 a {
   color: $red;
   text-decoration: none;
-  
-  :hover {
+  }
+
+a:hover {
   text-decoration: underline;
   }
 
-  :visited {
+a:visited {
   color: $red;
   }
-}
