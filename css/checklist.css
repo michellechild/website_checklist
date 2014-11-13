@@ -132,9 +132,11 @@ nav {
 a {
   color: #993300;
   text-decoration: none; }
-  a :hover {
-    text-decoration: underline; }
-  a :visited {
-    color: #993300; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #993300; }
 
 /*# sourceMappingURL=checklist.css.map */
