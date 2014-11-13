@@ -1,12 +1,23 @@
+@import 'reset';
+
 $dark-blue: #3E3E3E;
 $red: #993300;
 $gray: #dedede;
 $white: #FFFFFF;
 
 @mixin header-font {
-  font-family: "Gill Sans MT" Calibri, sans-serif;
+  font-family: "nimbus-sans", helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   line-height: 1.6;
   max-width: 500px;
+}
+
+@mixin section-styles {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px $gray solid;
+    border-radius: 1px;
 }
 
 body{
@@ -39,14 +50,13 @@ body{
 }
 
 h1, h2, h3 {
-    @include header-font
+    @include header-font;
 }
 
 
 h1 {
   color: $red;
   font-size: 30px;
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 30px;
@@ -57,22 +67,21 @@ h1 {
 h2 {
   color: $red;
   font-size: 40px;
-  font-weight: normal;
   margin-bottom: 30px;
 }
 
-h3{
+h3 {
   color: $dark-blue;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 40px;
   margin-bottom: 10px;
 }
 
 p, li {
-  font-family: "Source Serif Pro" Georgia, Cambria, serif;
+  font-family: "nimbus-sans", helvetica, arial, sans-serif;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 2;
   color: $dark-blue;
   max-width: 650px;
@@ -84,7 +93,6 @@ li {
   list-style-position: inside;
 
     .indent {
-      list-style-position: inside;
       padding-left: 40px;
       text-indent: -1em;
       font-size: 18px;
@@ -92,13 +100,16 @@ li {
   }
 
 
+
 header {
-padding-top: 50px;
-padding-bottom: 50px;
-border-bottom: 1px $gray solid;
-border-radius: 1px;
+@include section-styles;
+
 }
 
+section {
+  @include section-styles;
+  padding-left: 50px;
+}
 
 nav {
 margin: 75px auto 0;
@@ -112,7 +123,6 @@ margin: 75px auto 0;
   }
 }
 
-
 a {
   color: $red;
   text-decoration: none;
@@ -124,12 +134,4 @@ a {
   a:visited {
   color: $red;
   }
-}
-
-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  border-bottom: 1px $gray solid;
-  border-radius: 1px;
 }
