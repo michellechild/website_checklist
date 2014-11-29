@@ -1,0 +1,191 @@
+@import 'reset';
+@import 'var-and-mixins';
+@import 'presets';
+
+
+/*
+  ========================================
+  GLOBAL Header / Nav
+  ========================================
+*/
+header {
+  @include header-style;
+}
+
+h1 {
+  margin: 80px auto;
+}
+
+nav li {
+  width: 100%;
+  display: block;
+  a{
+  text-align: center;
+  padding-top: 55px;   
+  }
+}
+
+nav li:nth-child(4n+1) {
+a{
+@include nav-li-style ($color-primary-1);
+@include link-style ($color-dark, $color-primary-2);
+}
+}
+
+nav li:nth-child(4n+2) {
+a{
+@include nav-li-style ($color-primary-2);
+@include link-style ($color-light, $color-primary-1);
+}
+}
+
+nav li:nth-child(4n+3) {
+a{
+@include nav-li-style ($color-primary-3);
+@include link-style ($color-primary-1, $color-light);
+}
+}
+
+nav li:nth-child(4n+4) {
+a{
+@include nav-li-style ($color-light);
+@include link-style ($color-primary-2, $color-dark);
+}
+}
+
+.double {
+    padding-top: 40px;   
+}
+
+
+@media screen and (min-width: 30em) {
+
+  nav li {
+  float: left;
+  width: 48%;
+  }
+  nav li:nth-of-type(4n+1){
+  width: 48%;
+  }
+  nav li:nth-of-type(4n+2){
+  width: 48%;
+  }
+  nav li:nth-of-type(4n+3){
+  width: 48%;
+  }
+  nav li:nth-of-type(4n+4){
+  width: 48%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+h1 {
+  font-size: 7em;
+}
+
+  nav li {
+  float: left;
+  width: 32%;
+  }
+  nav li:nth-of-type(4n+1){
+  width: 32%;
+  }
+  nav li:nth-of-type(4n+2){
+  width: 32%;
+  }
+  nav li:nth-of-type(4n+3){
+  width: 32%;
+  }
+  nav li:nth-of-type(4n+4){
+  width: 32%;
+  }
+}
+
+
+@media screen and (min-width: 64em) {
+
+  nav li {
+  float: left;
+  width: 20%;
+  }
+  nav li:nth-of-type(4n+1){
+  width: 20%;
+  }
+  nav li:nth-of-type(4n+2){
+  width: 20%;
+  }
+  nav li:nth-of-type(4n+3){
+  width: 20%;
+  }
+  nav li:nth-of-type(4n+4){
+  width: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// .none {
+//   list-style-type: none;
+//   border-bottom: none;
+// }
+
+// .first {
+//   padding-left: 0;
+// }
+
+
+
+
+
+// h2 {
+
+//   font-size: 40px;
+//   margin-bottom: 30px;
+// }
+
+// h3 {
+
+//   font-size: 30px;
+//   font-weight: 400;
+//   margin-top: 40px;
+//   margin-bottom: 10px;
+// }
+
+// // p, li {
+// //   font-family: "nimbus-sans", helvetica, arial, sans-serif;
+// //   font-size: 20px;
+// //   font-weight: 300;
+// //   line-height: 2;
+
+// //   max-width: 650px;
+// //   padding-left: 20px;
+// //   text-indent: -1em;
+// // }
+
+// // li {
+// //   list-style-position: inside;
+// //   list-style-type: disc;
+
+// //     .indent {
+// //       list-style-type: circle;
+// //       padding-left: 40px;
+// //       text-indent: -1em;
+// //       font-size: 18px;
+// //     }
+// //   }
+
+
+// header, section {
+// @include div-bg;
+
+// }
+
+

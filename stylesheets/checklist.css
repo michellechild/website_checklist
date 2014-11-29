@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+div, header, nav, section, article, aside, footer, figure, button, img, hr {
+  position: relative; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+h1 {
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 6em;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  font-style: normal;
+  color: #FCFEFC;
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+/*
+  ========================================
+  GLOBAL Header / Nav
+  ========================================
+*/
+header {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #040204; }
+
+h1 {
+  margin: 80px auto; }
+
+nav li {
+  width: 100%;
+  display: block; }
+  nav li a {
+    text-align: center;
+    padding-top: 55px; }
+
+nav li:nth-child(4n+1) a {
+  background-color: #A4C2E4;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin: 30px auto;
+  font-family: "jubilat" serif;
+  font-size: 1.8em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #040204;
+  font-size: 2.2em;
+  color: #040204;
+  text-decoration: none;
+  display: block; }
+  nav li:nth-child(4n+1) a:hover {
+    color: #F45664;
+    text-decoration: none; }
+  nav li:nth-child(4n+1) a:visited {
+    color: #040204; }
+
+nav li:nth-child(4n+2) a {
+  background-color: #F45664;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin: 30px auto;
+  font-family: "jubilat" serif;
+  font-size: 1.8em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #040204;
+  font-size: 2.2em;
+  color: #FCFEFC;
+  text-decoration: none;
+  display: block; }
+  nav li:nth-child(4n+2) a:hover {
+    color: #A4C2E4;
+    text-decoration: none; }
+  nav li:nth-child(4n+2) a:visited {
+    color: #FCFEFC; }
+
+nav li:nth-child(4n+3) a {
+  background-color: #D4DE44;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin: 30px auto;
+  font-family: "jubilat" serif;
+  font-size: 1.8em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #040204;
+  font-size: 2.2em;
+  color: #A4C2E4;
+  text-decoration: none;
+  display: block; }
+  nav li:nth-child(4n+3) a:hover {
+    color: #FCFEFC;
+    text-decoration: none; }
+  nav li:nth-child(4n+3) a:visited {
+    color: #A4C2E4; }
+
+nav li:nth-child(4n+4) a {
+  background-color: #FCFEFC;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  margin: 30px auto;
+  font-family: "jubilat" serif;
+  font-size: 1.8em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #040204;
+  font-size: 2.2em;
+  color: #F45664;
+  text-decoration: none;
+  display: block; }
+  nav li:nth-child(4n+4) a:hover {
+    color: #040204;
+    text-decoration: none; }
+  nav li:nth-child(4n+4) a:visited {
+    color: #F45664; }
+
+.double {
+  padding-top: 40px; }
+
+@media screen and (min-width: 30em) {
+  nav li {
+    float: left;
+    width: 48%; }
+
+  nav li:nth-of-type(4n+1) {
+    width: 48%; }
+
+  nav li:nth-of-type(4n+2) {
+    width: 48%; }
+
+  nav li:nth-of-type(4n+3) {
+    width: 48%; }
+
+  nav li:nth-of-type(4n+4) {
+    width: 48%; } }
+@media screen and (min-width: 40em) {
+  h1 {
+    font-size: 7em; }
+
+  nav li {
+    float: left;
+    width: 32%; }
+
+  nav li:nth-of-type(4n+1) {
+    width: 32%; }
+
+  nav li:nth-of-type(4n+2) {
+    width: 32%; }
+
+  nav li:nth-of-type(4n+3) {
+    width: 32%; }
+
+  nav li:nth-of-type(4n+4) {
+    width: 32%; } }
+@media screen and (min-width: 64em) {
+  nav li {
+    float: left;
+    width: 20%; }
+
+  nav li:nth-of-type(4n+1) {
+    width: 20%; }
+
+  nav li:nth-of-type(4n+2) {
+    width: 20%; }
+
+  nav li:nth-of-type(4n+3) {
+    width: 20%; }
+
+  nav li:nth-of-type(4n+4) {
+    width: 20%; } }
+
+/*# sourceMappingURL=checklist.css.map */
