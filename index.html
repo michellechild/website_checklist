@@ -1,122 +1,143 @@
 <!DOCTYPE html>
-<html lang="en-US"> 
-	<head> 
+<html lang="en-US">
+	<head>
 		<title>Web Design Checklist</title>
-		<link href="stylesheets/checklist.css" type="text/css" rel="stylesheet"> 
-	  	<meta charset="utf-8">
-	  	<script src="//use.typekit.net/fxv0szo.js"></script>
+		<link href="stylesheets/checklist.css" type="text/css" rel="stylesheet">
+		<meta charset="utf-8">
+		<script src="//use.typekit.net/fxv0szo.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
 		<header>
 			<div class=container>
 				<h1>The Web Designer&#146;s Checklist</h1>
-					<nav>
-						<ul>
-							<li><a href="#html">HTML</a></li>
-							<li><a href="#css">CSS</a></li>
-							<li><a href="#sass">Sass</a></li>
-							<li><a href="#js">jQuery</a></li>
-							<li class="first"><a href="#git" class="double">GitHub/<br>Terminal</a></li>
-							<li><a href="#rwd" class="double">Responsive Web Design</a></li>
-							<li><a href="#tech-specs">Tech Specs</a></li>
-							<li><a href="#content">Content</a></li>
-							<li><a href="#grid">Grid</a></li>
-							<li><a href="#type">Typography</a></li>
-							<li><a href="#color" class="double">Color<br>Theory</a></li>
-							<li><a href="#wireframes">Wireframes</a></li>
-							<li><a href="#styletiles">Style Tiles</a></li>
-							<li><a href="#images" class="double">Saving<br>Images</a></li>
-							<li><a href="#accessibility">Accessibility</a></li>
-							<li><a href="#validate">Validate</a></li>
-						</ul>
-						<br>
-						<ul>
-						</ul>
-					</nav>
-				</div>
-			</header>
- 			<section>
-				<h2 id="html">HTML</h2>
+				<nav>
+					<ul>
+						<li><a href="#html">HTML</a></li>
+						<li><a href="#css">CSS</a></li>
+						<li><a href="#sass">Sass</a></li>
+						<li><a href="#js">jQuery</a></li>
+						<li><a href="#rwd" class="double">Responsive Web Design</a></li>
+						<li><a href="#git" class="double">GitHub/<br>Terminal</a></li>
+						<li><a href="#tech-specs">Tech Specs</a></li>
+						<li><a href="#content">Content</a></li>
+						<li><a href="#grid">Grid</a></li>
+						<li><a href="#type">Typography</a></li>
+						<li><a href="#color" class="double">Color<br>Theory</a></li>
+						<li><a href="#wireframes">Wireframes</a></li>
+						<li><a href="#styletiles">Style Tiles</a></li>
+						<li><a href="#images" class="double">Saving<br>Images</a></li>
+						<li><a href="#accessibility">Accessibility</a></li>
+						<li><a href="#validate">Validate</a></li>
+					</ul>
+					<br>
+					<ul>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<div id="html" class="container">
+				<div class="h2-wrap"><h2>HTML</h2></div>
 				<ul>
-					<li>Your document begins like this:
-						<code><!DOCTYPE html><!DOCTYPE html>
-						<html lang="en-US"> 
-						<head> 
-							<title>Web Design is Cool</title> 
-							(1)<link href="stylesheets/style.css" type="text/css" rel="stylesheet"> 
-	  						(2)<meta charset="utf-8">
-	  						(3)<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  						(4)<script>Web Fonts link here</script>
-	  						(5)<script>Javascript/jQuery link here</script>
-						</head>
-						</code>
+					<li>Your document starts like this:
+						<code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en-US"&gt;<br>&lt;head&gt;<br>&lt;title&gt;Web Design is Cool&lt;/title&gt;<br></code>
 					</li>
-					<li class="head">(1) Links to your CSS stylesheets.</li>
-					<li class="head">(2) Meta tag for charset declares the character encoding used of the page.</li>
-					<li class="head">(3) Meta tag for viewport allows devices to read media queries (responsive web design).</li>
-					<li class="head">(4) Links to web fonts (if used) from services like Adobe TypeKit, myFonts, Webtype, etc.</li>
-					<li class="head">(5) Links to your Js stylesheets or jQuery hosting site. This can also be placed at the bottom of your body.</li>
-					<li><code><br></code> tags are used for type purposes only.</li>
-					<li><code><alt></code> tags are included on all images.</li>
-					<li>h1 tag is only used once per html page.</li>
-					<li>Container div is set.</li>
-					<li>Characters are coded: &amp;, &lsquo;, &rsquo;, &ldquo;, &rdquo;</li>
-					<li>Nothing resides between <code><ul></code> and <code><li></code>tags.</li>
-					<li>Id tags are used only once.</li>
-					<li>HTML document is indented and spaced correctly.</li>
+					<li>
+						Links to your CSS stylesheets.
+						<code>&lt;link href="stylesheets/style.css" type="text/css" rel="stylesheet"&gt;<br></code>
+					</li>
+					<li>
+						Includes a meta tag for charset to declare the character encoding used of the page.
+						<code>&lt;meta charset="utf-8"&gt;<br></code>
+					</li>
+					<li>
+						Includes a meta tag for viewport to allow devices to read media queries (see <a href="rwd.html">responsive web design</a>).
+						<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br></code>
+					</li>
+					<li>
+						Links to web fonts from services like Adobe TypeKit, myFonts, Webtype, etc. (Adobe Typekit example here).
+						<code>&lt;script src="//use.typekit.net/fxv0szo.js"&gt;&lt;/script&gt;
+						&lt;script&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;<br></code>
+					</li>
+					<li>
+						And finally, links to your .js file or jQuery hosting site (this can also be placed at the bottom of your body).
+						<code>&lt;scriptsrc="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;&lt;head&gt;</code>
+					</li>
+					<li>&lt;br&gt; tags are used for type purposes only.</li>
+					<li>&lt;alt&gt; tags are included on all images.</li>
+					<li>&lt;h1&gt; tag is only used once per page.</li>
+					<li>**Container div is wrapped around content!**</li>
+					<li>Characters are coded: &amp; &lsquo; &rsquo; &ldquo;, &rdquo;</li>
+					<li>Nothing resides between &lt;ul&gt; and &lt;li&gt;tags.</li>
+					<li>&lt;id&gt; tags are used only once.</li>
+					<li>HTML document is indented and spaced correctly. If you're using Sublime Text, try package HTML Beautify.</li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="css">CSS</h2>
+			</div>
+		</section>
+		<section>
+			<div id="css" class="container">
+				<div class="h2-wrap"><h2>CSS</h2>
+				</div>
 				<ul>
 					<li>A CSS reset or normalize file is used.</li>
 					<li>Class and id tags are labeled based on content, not style.</li>
 					<li>CSS document is indented and spaced correctly.</li>
 					<li>Stylesheet is organized into sections and clearly labeled with comments.</li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="sass">Sass</h2>
+			</div>
+		</section>
+		<section>
+			<div id="sass" class="container">
+				<div class="h2-wrap"><h2>Sass</h2></div>
 				<ul>
 					<li>Variables and Mixins are labeled based on content, not style.</li>
-					<li>Imported files begin with an underscore. </li> 
+					<li>Imported files begin with an underscore. </li>
 					<li><span>Sass --watch</span> is always turned on when working in .scss files.</li>
-					<li>Nesting is used cautiously to avoid specificity issues&mdash; if you don't need to nest, don't. 
-					<li> <a href="http://thesassway.com/beginner/the-inception-rule">The Inception Rule</a> is followed (no more than four levels deep!).</li>
-			</ul>
+					<li>Nesting is used cautiously to avoid specificity issues&mdash; if you don't need to nest, don't.
+						<li> <a href="http://thesassway.com/beginner/the-inception-rule">The Inception Rule</a> is followed (no more than four levels deep!).</li>
+					</ul>
+				</div>
 			</section>
 			<section>
-				<h2 id="js">jQuery</h2>
+				<div id="js" class="container">
+					<div class="h2-wrap"><h2>jQuery</h2></div>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div id="rwd" class="container">
+				<div class="h2-wrap"><h2>RWD</h2></div>
+				<h3>Responsive Web Design</h3>
 				<ul>
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="rwd">Responsive Web Design</h2>
-				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-				</ul>
-			</section>
-			<section>
-				<h2 id="git">Git/Terminal</h2>
+			</div>
+		</section>
+		<section>
+			<div id="git" class="container">
+				<div class="h2-wrap"><h2>Git/<br>Terminal</h2></div>
 				<ul>
 					<li>Work locally!</li>
-					<li>Push all work to a branch until a live version can be pushed to the master.</li> 
+					<li>Push all work to a branch until a live version can be pushed to the master.</li>
 					<li>Site is pushed to GitHub as changes are made.</li>
 					<li>Commit messages are clear and expressive.</li>
 					<li>Gh-pages are updated with each commit.</li>
 					<li>Descriptive README files are included in each repository.</li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="tech-specs">Technical Specifications and File Management</h2>
+			</div>
+		</section>
+		<section>
+			<div id="tech-specs" class="container">
+				<div class="h2-wrap"><h2>Tech Specs</h2></div>
+				<h3>Technical Specifications and File Management</h3>
 				<ul>
 					<li>No spaces are used in any file name, folder, or anything. ever. never.</li>
 					<li>First html file is labeled index.html and in the root folder.</li>
@@ -124,82 +145,96 @@
 					<li>Asset files are organized and labeled clearly and based on content.</li>
 					<li>All unnecessary files are removed.</li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="content">Content</h2>
+			</div>
+		</section>
+		<section>
+			<div id="content" class="container">
+				<div class="h2-wrap"><h2>Content</h2></div>
 				<ul>
 					<li>Content belongs to you OR</li>
 					<li>The author has been credited.</li>
-					<li>Content is clearly written and easy to understand.</li> 
+					<li>Content is clearly written and easy to understand.</li>
 					<li>Content is the focus of the site.</li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="Grid">Grid</h2>
-					<ul>
-						<li>Site is &#40;mostly&#41; aligned to a grid.</li>
-						<li>There is a sufficient amount of whitespace between elements of the page.</li>
-						<li><a href="http://www.creativebloq.com/graphic-design/designer-s-guide-gestalt-theory-10134960">Gestalt Theory Principles</a> were considered with the overall design.</li>
-					</ul>
-			</section>
-			<section>
-				<h2 id="type">Typography</h2>
-					<ul>
-						<li>Refer to <a href="http://practicaltypography.com/">Butterick's Practical Typography</a> for all things type. Seriously.</li>
-						<li>Typefaces are well considered, starting with body type. There are several sites and articles to help you find a good typographic pair. Try these: <a href="http://www.creativebloq.com/typography/20-perfect-type-pairings-3132120">Creative Bloq</a>, <a href="http://www.typegenius.com/">Type Genius</a>, or you can<a href="http://lmgtfy.com/?q=type+pairing">Google it</a></li>
-						<li class="none">
-							<ul class="indent">
-								<li>X-heights match for heading and body type.</li>
-								<li>Effectively sets the tone for the content.</li>
-							</ul>
-						</li>
-						<li>No more than two font families are used. One superfamily is also good way to go!</li>
-						<li>A max-width is set for type allowing 45-90 characters per line. Use this line to measure: <span>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd</span></li>
-						<li>The following five properties are styled for each typographic element &#40;you can also use <a href="http://www.cssfontstack.com/">CSS Font Stack&#41;)</a>:</li>
-						<li class="none">
-							<ul class="indent">
-								<li>Font-family, including second, third and fourth options.</li>
-								<li>Font-size &#40;minimum 16px for body type&#41;.</li>
-								<li>Line-height &#40;140&#37; minimum, but ultimately based on font-size.&#41;.</li>
-								<li>Color (see <a href="#color"></a>Color Theory).</li>
-								<li>Max-width (see above).</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section>
-				<h2 id="color">Color Theory</h2>					
-					<ul>
-						<li>Colors reflect the message of your content.</li>
-						<li>The <a href="http://leaverou.github.io/contrast-ratio/">color contrast</a> of your type and background colors has passed the test.</li>
-						<li>The site has been tested for <a href="http://colorfilter.wickline.org/">color blindess</a> compatibility.</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Wireframes</h2>
-						<ul>
-							<li><a href=""></a></li>
-							<li><a href=""></a></li>
-							<li><a href=""></a></li>
-							<li><a href=""></a></li>
+			</div>
+		</section>
+		<section>
+			<div id="grid" class="container">
+				<div class="h2-wrap"><h2>Grid</h2></div>
+				<ul>
+					<li>Site is &#40;mostly&#41; aligned to a grid.</li>
+					<li>There is a sufficient amount of whitespace between elements of the page.</li>
+					<li><a href="http://www.creativebloq.com/graphic-design/designer-s-guide-gestalt-theory-10134960">Gestalt Theory Principles</a> were considered with the overall design.</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div id="technology" class="container">
+				<div class="h2-wrap"><h2>Technology</h2></div>
+				<ul>
+					<li>Refer to <a href="http://practicaltypography.com/">Butterick's Practical Typography</a> for all things type. Seriously.</li>
+					<li>Typefaces are well considered, starting with body type. There are several sites and articles to help you find a good typographic pair. Try these: <a href="http://www.creativebloq.com/typography/20-perfect-type-pairings-3132120">Creative Bloq</a>, <a href="http://www.typegenius.com/">Type Genius</a>, or you can<a href="http://lmgtfy.com/?q=type+pairing">Google it</a></li>
+					<li class="none">
+						<ul class="indent">
+							<li>X-heights match for heading and body type.</li>
+							<li>Effectively sets the tone for the content.</li>
 						</ul>
-				</section>
-				<section>
-				<h2 id="styletiles">Style Tiles</h2
-					<ul>
-						<li>Checkout these resources on using Style Tiles and Element Collages to test designs before creating full design comps:
-							<ul> 
-								<li><a href="http://styletil.es/">Samantha Warren's Style Tiles</a>.</li>
-								<li><a href="http://alistapart.<com/article/style-tiles-and-how-they-work">Style Tiles and How They Work</a>, also by Samantha Warren.</li>
-								<li><a href="http://webdesign.tutsplus.com/articles/style-tiles-an-alternative-to-full-design-comps--webdesign-7232">Style Tiles: An Alternative to Full Design Comps</a>.</li>
-								<li>Dan Mall's<a href="http://danielmall.com/articles/rif-element-collages/"> Element Collages</a>.</li>
-								<li><a href="http://clearleft.com/thinks/visualdesignexplorations/">Visual Design Explorations</a>&#40;a comparison of the two&#41;.</li>
-							</ul>
-						</li>
-					</ul>
-			</section>
-			<section>
-				<h2 id="images">Saving Images</h2>
+					</li>
+					<li>No more than two font families are used. One superfamily is also good way to go!</li>
+					<li>A max-width is set for type allowing 45-90 characters per line. Use this line to measure: <span>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd</span></li>
+					<li>The following five properties are styled for each typographic element &#40;you can also use <a href="http://www.cssfontstack.com/">CSS Font Stack&#41;)</a>:</li>
+					<li class="none">
+						<ul class="indent">
+							<li>Font-family, including second, third and fourth options.</li>
+							<li>Font-size &#40;minimum 16px for body type&#41;.</li>
+							<li>Line-height &#40;140&#37; minimum, but ultimately based on font-size.&#41;.</li>
+							<li>Color (see <a href="#color"></a>Color Theory).</li>
+							<li>Max-width (see above).</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div id="color" class="container">
+				<div class="h2-wrap"><h2>Color<br>Theory</h2></div>
+				<ul>
+					<li>Colors reflect the message of your content.</li>
+					<li>The <a href="http://leaverou.github.io/contrast-ratio/">color contrast</a> of your type and background colors has passed the test.</li>
+					<li>The site has been tested for <a href="http://colorfilter.wickline.org/">color blindess</a> compatibility.</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div id="wireframes" class="container">
+				<div class="h2-wrap"><h2>Wireframes</h2></div>
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div id="styletiles" class="container">
+				<div class="h2-wrap"><h2>Style<br>Tiles</h2></div>
+				<ul>
+					<li>Checkout these resources on using Style Tiles and Element Collages to test designs before creating full design comps:
+						<ul>
+							<li><a href="http://styletil.es/">Samantha Warren's Style Tiles</a>.</li>
+							<li><a href="http://alistapart.<com/article/style-tiles-and-how-they-work">Style Tiles and How They Work</a>, also by Samantha Warren.</li>
+							<li><a href="http://webdesign.tutsplus.com/articles/style-tiles-an-alternative-to-full-design-comps--webdesign-7232">Style Tiles: An Alternative to Full Design Comps</a>.</li>
+							<li>Dan Mall's<a href="http://danielmall.com/articles/rif-element-collages/"> Element Collages</a>.</li>
+							<li><a href="http://clearleft.com/thinks/visualdesignexplorations/">Visual Design Explorations</a>&#40;a comparison of the two&#41;.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div id="images" class="container">
+				<div class="h2-wrap"><h2>Saving<br>Images</h2></div>
 				<ul>
 					<li>This process was followed when saving images for the web:</li>
 					<li class="none">
@@ -207,23 +242,27 @@
 							<li>Images are sized proportionally.</li>
 							<li>Images are proportionally and carefully cropped to fit size specifications.</li>
 							<li>The best filetype for your image is chosen: .png, .jpg, .gif, or .svg.</li>
-							<li>The Save For Web feature on Adobe Illustrator or Photoshop is used.</li> 
+							<li>The Save For Web feature on Adobe Illustrator or Photoshop is used.</li>
 						</ol>
 					</li>
 				</ul>
-			</section>
-			<section>
-				<h2 id="accessibility">Accessibility/Usability</h2>
+			</div>
+		</section>
+		<section>
+			<div id="accessibility" class="container">
+				<div class="h2-wrap"><h2>Accessibility</h2></div>
 				<ul>
 					<li>Site loads quickly</li>
 					<li>Site is responsive.</li>
 					<li>Consult the <a href="http://a11yproject.com/checklist.html"> A11y project usability checklist.</a></li>
 				</ul>
-			</section>
-			<section class="none">
-				<h2 id="validate">Validate</h2>
+			</div>
+		</section>
+		<section class="none">
+			<div id="validate" class="container">
+				<div class="h2-wrap"><h2>Validate</h2></div>
 				<ul>
-					<li>Consult <a href="http://caniuse.com/">Can I Use?</a> site.</li> 
+					<li>Consult <a href="http://caniuse.com/">Can I Use?</a> site.</li>
 					<li>Site has been tested on different browswers and screens.</li>
 					<li>Validate that sucker!</li>
 					<li class="none">
@@ -233,7 +272,7 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
-		</div>
+			</div>
+		</section>
 	</body>
 </html>
