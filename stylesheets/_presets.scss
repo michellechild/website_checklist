@@ -1,0 +1,43 @@
+div, header, nav, section, article, aside, footer, figure, button, img, hr{
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+  max-width: 1000px;
+  width:85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1 {
+  @include h1-font;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+.clear{
+  clear: both;
+}
