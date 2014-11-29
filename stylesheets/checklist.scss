@@ -9,7 +9,7 @@
   ========================================
 */
 header {
-  @include header-style;
+  @include div-style($color-dark);
 }
 
 h1 {
@@ -57,6 +57,63 @@ a{
     padding-top: 40px;   
 }
 
+/*
+  ========================================
+  GLOBAL SECTIONS
+  ========================================
+*/
+section {
+
+  h2 {
+  text-align: center;
+  padding-top: 90px;
+
+  }
+  
+  ul {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  li {
+    @include li-font;
+  }
+
+  code {
+    @include code-style;
+  }
+}
+
+section:nth-of-type(odd) {
+    @include div-style($color-light);
+}
+section:nth-of-type(even){
+    @include div-style($color-dark);
+    li {
+      color: $color-light;
+    }
+}
+
+.h2-wrap:nth-of-type(4n+1){
+  @include h2-wrap;
+  background-color: $color-primary-1;
+}
+  
+.h2-wrap:nth-of-type(4n+2){
+  @include h2-wrap;
+  background-color: $color-primary-2;
+}
+
+.h2-wrap:nth-of-type(4n+3){
+  @include h2-wrap;
+  background-color: $color-primary-3;
+}
+
+.h2-wrap:nth-of-type(4n+4){
+  @include h2-wrap;
+  background-color: $color-light;
+}
+
 
 @media screen and (min-width: 30em) {
 
@@ -79,9 +136,6 @@ a{
 }
 
 @media screen and (min-width: 40em) {
-h1 {
-  font-size: 7em;
-}
 
   nav li {
   float: left;
@@ -125,67 +179,5 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-// .none {
-//   list-style-type: none;
-//   border-bottom: none;
-// }
-
-// .first {
-//   padding-left: 0;
-// }
-
-
-
-
-
-// h2 {
-
-//   font-size: 40px;
-//   margin-bottom: 30px;
-// }
-
-// h3 {
-
-//   font-size: 30px;
-//   font-weight: 400;
-//   margin-top: 40px;
-//   margin-bottom: 10px;
-// }
-
-// // p, li {
-// //   font-family: "nimbus-sans", helvetica, arial, sans-serif;
-// //   font-size: 20px;
-// //   font-weight: 300;
-// //   line-height: 2;
-
-// //   max-width: 650px;
-// //   padding-left: 20px;
-// //   text-indent: -1em;
-// // }
-
-// // li {
-// //   list-style-position: inside;
-// //   list-style-type: disc;
-
-// //     .indent {
-// //       list-style-type: circle;
-// //       padding-left: 40px;
-// //       text-indent: -1em;
-// //       font-size: 18px;
-// //     }
-// //   }
-
-
-// header, section {
-// @include div-bg;
-
-// }
 
 

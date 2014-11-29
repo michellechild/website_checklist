@@ -18,26 +18,15 @@ html {
   overflow: hidden;
 }
 
+.clear{
+  clear: both;
+}
+
 h1 {
   @include h1-font;
 }
 
 h2 {
+  @include h2-font;
 
-}
-
-h3 {
-
-}
-
-p {
-
-}
-
-a {
-
-}
-
-.clear{
-  clear: both;
 }

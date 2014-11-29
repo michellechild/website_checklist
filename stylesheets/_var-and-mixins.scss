@@ -1,7 +1,7 @@
 $color-primary-1: #A4C2E4;
 $color-primary-2: #F45664;
 $color-primary-3: #D4DE44;
-$color-dark: #040204;
+$color-dark: #242224;
 $color-light: #FCFEFC;
 
 
@@ -15,11 +15,41 @@ $color-light: #FCFEFC;
   color: $color-light;
   text-align: center;
 }
+@mixin h2-wrap{
+	width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    margin: 0 auto 80px auto;
+}
 
-@mixin header-style {
+@mixin h2-font{
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  letter-spacing: 0.3em;
+  line-height: 1.4;
+  font-style: normal;
+}
+
+
+@mixin li-font {
+	font-family: "jubilat" serif;
+	font-size: 2.2em;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: normal;
+	color: $color-dark;
+	margin-bottom: 40px;
+	list-style-type: disc;
+	max-width: 550px;
+	list-style-position: inside;
+}
+
+@mixin div-style ($color){
+	width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
-	background-color: $color-dark;
+	background-color: $color;
 }
 
 @mixin nav-li-style ($background-color) {
@@ -31,7 +61,7 @@ $color-light: #FCFEFC;
 }
 
 @mixin link-style ($color, $color-hover){
-	@include p-font;
+	@include li-font;
 	font-size: 2.2em;
 	color: $color;
 	text-decoration: none; 
@@ -46,15 +76,16 @@ $color-light: #FCFEFC;
 	}
 }
 
-
-@mixin p-font {
-	font-family: "jubilat" serif;
-	font-size: 1.8em;
-	line-height: 1.5;
-	font-weight: 400;
-	font-style: normal;
+@mixin code-style {
+	background-color: #CCC;
+	font-family: "courier new";
+	padding: 20px;
+	display: block;
+	margin: 10px;
 	color: $color-dark;
 }
+
+
 
 
 
