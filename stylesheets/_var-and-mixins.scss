@@ -1,3 +1,5 @@
+
+
 $color-primary-1: #A4C2E4;
 $color-primary-2: #F45664;
 $color-primary-3: #D4DE44;
@@ -48,7 +50,7 @@ $color-light: #FCFEFC;
 	color: $color-dark;
 	margin-bottom: 40px;
 	list-style-type: disc;
-	max-width: 550px;
+	max-width: 650px;
 	list-style-position: inside;
 }
 
@@ -71,16 +73,19 @@ $color-light: #FCFEFC;
 	font-family: "jubilat" serif;
 	font-size: 2.2em;
 	line-height: 1.5;
-	font-weight: 200;
+	font-weight: 400;
 	font-style: normal;
 	color: $color;
 	text-decoration: none; 
 	display: block;
+
 	&:hover {
 		color: $color-hover;
 		text-decoration: none;
-	}
+		}
 }
+
+
 
 @mixin link-style ($color, $color-hover){
 	color: $color;
@@ -99,7 +104,28 @@ $color-light: #FCFEFC;
 	color: $color-dark;
 }
 
+@mixin button-style ($color, $color-hover){
+	font-family: "jubilat" serif;
+	font-size: 2.5em;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: normal;
+	border: 3px solid $color;
+	color: $color;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 22px;
+	display: block;
+    max-width: 200px;
+    margin: 50px auto 0 auto;
+    outline: none;
 
+    &:hover {
+    border: 3px solid $color-hover;
+    color: $color-hover;
+	text-decoration: none;
+    }
+}
 
 
 
