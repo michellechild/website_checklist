@@ -28,33 +28,37 @@ nav li {
 nav li:nth-child(4n+1) {
 a{
 @include nav-li-style ($color-primary-1);
-@include link-style ($color-dark, $color-primary-2);
+@include nav-link-style ($color-dark, $color-primary-2);
 }
 }
 
 nav li:nth-child(4n+2) {
 a{
 @include nav-li-style ($color-primary-2);
-@include link-style ($color-light, $color-primary-1);
+@include nav-link-style ($color-light, $color-dark);
 }
 }
 
 nav li:nth-child(4n+3) {
 a{
 @include nav-li-style ($color-primary-3);
-@include link-style ($color-primary-1, $color-light);
+@include nav-link-style ($color-dark, $color-light);
 }
 }
 
 nav li:nth-child(4n+4) {
 a{
 @include nav-li-style ($color-light);
-@include link-style ($color-primary-2, $color-dark);
+@include nav-link-style ($color-primary-2, $color-dark);
 }
 }
 
 .double {
     padding-top: 40px;   
+}
+
+.double-2 {
+    padding-top: 50px;   
 }
 
 /*
@@ -63,11 +67,22 @@ a{
   ========================================
 */
 section {
+  .h2-wrap {
+  @include h2-wrap;
+  }
 
   h2 {
+  @include h2-font;
   text-align: center;
   padding-top: 90px;
+  }
 
+
+  h3 {
+    @include h3-font;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    text-align: center;
   }
   
   ul {
@@ -78,40 +93,60 @@ section {
   li {
     @include li-font;
   }
+  
+  .indent {
+    list-style-type: circle;
+    padding-left: 1em;
+  }
 
-  code {
+  .small {
+    padding-top: 100px;
+    font-size: 3.5em;
+  }
+   code {
     @include code-style;
   }
 }
 
 section:nth-of-type(odd) {
     @include div-style($color-light);
+    a {
+    @include link-style($color-dark, $color-primary-2);
+    }
 }
 section:nth-of-type(even){
     @include div-style($color-dark);
     li {
       color: $color-light;
     }
+   a {
+    @include link-style($color-light, $color-primary-2);
+  }
+
 }
 
-.h2-wrap:nth-of-type(4n+1){
-  @include h2-wrap;
-  background-color: $color-primary-1;
+section:nth-of-type(4n+1){
+  .h2-wrap {
+    background-color: $color-primary-1;
+  }
 }
   
-.h2-wrap:nth-of-type(4n+2){
-  @include h2-wrap;
+section:nth-of-type(4n+2){
+  .h2-wrap {
   background-color: $color-primary-2;
+  }
 }
 
-.h2-wrap:nth-of-type(4n+3){
-  @include h2-wrap;
+section:nth-of-type(4n+3){
+  .h2-wrap {
   background-color: $color-primary-3;
+  }
 }
 
-.h2-wrap:nth-of-type(4n+4){
-  @include h2-wrap;
+section:nth-of-type(4n+4){
+  .h2-wrap {
   background-color: $color-light;
+  }
 }
 
 
