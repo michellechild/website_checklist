@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-div, header, nav, section, article, aside, footer, figure, button, img, hr {
+div, header, nav, section, article, aside, footer, figure, button, img, hr, a, li {
   position: relative; }
 
 html {
@@ -74,6 +74,52 @@ h1 {
   color: #FCFEFC;
   text-align: center; }
 
+h1 {
+  animation-name: h1ColorCycle;
+  animation-duration: 24s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: h1ColorCycle;
+  -webkit-animation-duration: 24s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite; }
+
+@keyframes h1ColorCycle {
+  0% {
+    color: #FCFEFC; }
+  25% {
+    color: #A4C2E4; }
+  50% {
+    color: #F45664; }
+  75% {
+    color: #D4DE44; } }
+@-webkit-keyframes h1ColorCycle {
+  0% {
+    color: #FCFEFC; }
+  25% {
+    color: #A4C2E4; }
+  50% {
+    color: #F45664; }
+  75% {
+    color: #D4DE44; } }
+@-moz-keyframes h1ColorCycle {
+  0% {
+    color: #FCFEFC; }
+  25% {
+    color: #A4C2E4; }
+  50% {
+    color: #F45664; }
+  75% {
+    color: #D4DE44; } }
+@-o-keyframes h1ColorCycle {
+  0% {
+    color: #FCFEFC; }
+  25% {
+    color: #A4C2E4; }
+  50% {
+    color: #F45664; }
+  75% {
+    color: #D4DE44; } }
 /*
   ========================================
   GLOBAL Header / Nav
@@ -87,6 +133,9 @@ header {
 
 h1 {
   margin: 80px auto; }
+  h1:hover {
+    color: #A4C2E4;
+    transition: 2s ease all; }
 
 nav li {
   width: 100%;
@@ -104,14 +153,18 @@ nav li:nth-child(4n+1) a {
   font-family: "jubilat" serif;
   font-size: 2.2em;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   color: #242224;
   text-decoration: none;
-  display: block; }
+  display: block;
+  bottom: 0;
+  transition: 2s ease all; }
   nav li:nth-child(4n+1) a:hover {
     color: #F45664;
     text-decoration: none; }
+  nav li:nth-child(4n+1) a:hover {
+    bottom: 20px; }
 
 nav li:nth-child(4n+2) a {
   background-color: #F45664;
@@ -122,14 +175,18 @@ nav li:nth-child(4n+2) a {
   font-family: "jubilat" serif;
   font-size: 2.2em;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   color: #FCFEFC;
   text-decoration: none;
-  display: block; }
+  display: block;
+  bottom: 0;
+  transition: 2s ease all; }
   nav li:nth-child(4n+2) a:hover {
     color: #242224;
     text-decoration: none; }
+  nav li:nth-child(4n+2) a:hover {
+    bottom: 20px; }
 
 nav li:nth-child(4n+3) a {
   background-color: #D4DE44;
@@ -140,14 +197,18 @@ nav li:nth-child(4n+3) a {
   font-family: "jubilat" serif;
   font-size: 2.2em;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   color: #242224;
   text-decoration: none;
-  display: block; }
+  display: block;
+  bottom: 0;
+  transition: 2s ease all; }
   nav li:nth-child(4n+3) a:hover {
-    color: #FCFEFC;
+    color: #F45664;
     text-decoration: none; }
+  nav li:nth-child(4n+3) a:hover {
+    bottom: 20px; }
 
 nav li:nth-child(4n+4) a {
   background-color: #FCFEFC;
@@ -158,14 +219,18 @@ nav li:nth-child(4n+4) a {
   font-family: "jubilat" serif;
   font-size: 2.2em;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   color: #F45664;
   text-decoration: none;
-  display: block; }
+  display: block;
+  bottom: 0;
+  transition: 1s ease all; }
   nav li:nth-child(4n+4) a:hover {
     color: #242224;
     text-decoration: none; }
+  nav li:nth-child(4n+4) a:hover {
+    bottom: 20px; }
 
 .double {
   padding-top: 40px; }
@@ -182,7 +247,10 @@ section .h2-wrap {
   width: 250px;
   height: 250px;
   border-radius: 200px;
-  margin: 30px auto 80px auto; }
+  margin: 30px auto 80px auto;
+  transition: 4s ease all; }
+  section .h2-wrap:hover {
+    transform: rotateY(360deg); }
 section h2 {
   font-family: "freight-sans-pro", helvetica, sans-serif;
   font-weight: 600;
@@ -202,7 +270,7 @@ section h3 {
   margin-bottom: 40px;
   text-align: center; }
 section ul {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto; }
 section li {
   font-family: "jubilat" serif;
@@ -213,7 +281,7 @@ section li {
   color: #242224;
   margin-bottom: 40px;
   list-style-type: disc;
-  max-width: 550px;
+  max-width: 650px;
   list-style-position: inside; }
 section .indent {
   list-style-type: circle;
@@ -221,6 +289,8 @@ section .indent {
 section .small {
   padding-top: 100px;
   font-size: 3.5em; }
+section span {
+  color: #D4DE44; }
 section code {
   background-color: #CCC;
   font-family: "courier new", monospace, serif;
@@ -240,6 +310,25 @@ section:nth-of-type(odd) {
     section:nth-of-type(odd) a:hover {
       color: #F45664;
       text-decoration: none; }
+  section:nth-of-type(odd) button {
+    font-family: "jubilat" serif;
+    font-size: 2.5em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    border: 3px solid #242224;
+    color: #242224;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 22px;
+    display: block;
+    max-width: 200px;
+    margin: 50px auto 0 auto;
+    outline: none; }
+    section:nth-of-type(odd) button:hover {
+      border: 3px solid #F45664;
+      color: #F45664;
+      text-decoration: none; }
 
 section:nth-of-type(even) {
   width: 100%;
@@ -254,18 +343,45 @@ section:nth-of-type(even) {
     section:nth-of-type(even) a:hover {
       color: #F45664;
       text-decoration: none; }
+  section:nth-of-type(even) button {
+    font-family: "jubilat" serif;
+    font-size: 2.5em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    border: 3px solid #FCFEFC;
+    color: #FCFEFC;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 22px;
+    display: block;
+    max-width: 200px;
+    margin: 50px auto 0 auto;
+    outline: none; }
+    section:nth-of-type(even) button:hover {
+      border: 3px solid #D4DE44;
+      color: #D4DE44;
+      text-decoration: none; }
 
 section:nth-of-type(4n+1) .h2-wrap {
   background-color: #A4C2E4; }
+  section:nth-of-type(4n+1) .h2-wrap:hover {
+    background-color: #F45664; }
 
 section:nth-of-type(4n+2) .h2-wrap {
   background-color: #F45664; }
+  section:nth-of-type(4n+2) .h2-wrap:hover {
+    background-color: #FCFEFC; }
 
 section:nth-of-type(4n+3) .h2-wrap {
   background-color: #D4DE44; }
+  section:nth-of-type(4n+3) .h2-wrap:hover {
+    background-color: #A4C2E4; }
 
 section:nth-of-type(4n+4) .h2-wrap {
   background-color: #FCFEFC; }
+  section:nth-of-type(4n+4) .h2-wrap:hover {
+    background-color: #F45664; }
 
 @media screen and (min-width: 30em) {
   nav li {

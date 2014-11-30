@@ -1,56 +1,84 @@
 @import 'reset';
 @import 'var-and-mixins';
 @import 'presets';
-
+@import 'colorcycle';
 
 /*
   ========================================
   GLOBAL Header / Nav
   ========================================
 */
+
 header {
   @include div-style($color-dark);
 }
 
 h1 {
   margin: 80px auto;
+  &:hover {
+    color: $color-primary-1;
+    transition: 2s ease all;
+  }
 }
 
 nav li {
   width: 100%;
   display: block;
-  a{
+  a{  
   text-align: center;
   padding-top: 55px;   
   }
 }
 
 nav li:nth-child(4n+1) {
-a{
-@include nav-li-style ($color-primary-1);
-@include nav-link-style ($color-dark, $color-primary-2);
-}
+  a{
+  @include nav-li-style ($color-primary-1);
+  @include nav-link-style ($color-dark, $color-primary-2)
+  ;
+  bottom: 0;
+  transition: 2s ease all;
+    &:hover {
+    bottom: 20px;
+    }
+  }
 }
 
 nav li:nth-child(4n+2) {
-a{
-@include nav-li-style ($color-primary-2);
-@include nav-link-style ($color-light, $color-dark);
-}
+  a{
+  @include nav-li-style ($color-primary-2);
+  @include nav-link-style ($color-light, $color-dark);
+  bottom: 0;
+  transition: 2s ease all;
+    &:hover {
+    bottom: 20px;
+    }
+  }
 }
 
+
 nav li:nth-child(4n+3) {
-a{
-@include nav-li-style ($color-primary-3);
-@include nav-link-style ($color-dark, $color-light);
-}
+  a{
+  @include nav-li-style ($color-primary-3);
+  @include nav-link-style ($color-dark, $color-primary-2);
+  bottom: 0;
+  transition: 2s ease all;
+    
+    &:hover {
+    bottom: 20px;
+    }
+  }
 }
 
 nav li:nth-child(4n+4) {
-a{
-@include nav-li-style ($color-light);
-@include nav-link-style ($color-primary-2, $color-dark);
-}
+  a{
+  @include nav-li-style ($color-light);
+  @include nav-link-style ($color-primary-2, $color-dark);
+  bottom: 0;
+  transition: 1s ease all;
+    &:hover {
+    bottom: 20px;
+    }
+  }
 }
 
 .double {
@@ -69,6 +97,10 @@ a{
 section {
   .h2-wrap {
   @include h2-wrap;
+  transition: 4s ease all;
+  &:hover{
+  transform:rotateY(360deg)
+  }
   }
 
   h2 {
@@ -86,14 +118,14 @@ section {
   }
   
   ul {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
   }
 
   li {
     @include li-font;
   }
-  
+
   .indent {
     list-style-type: circle;
     padding-left: 1em;
@@ -102,6 +134,9 @@ section {
   .small {
     padding-top: 100px;
     font-size: 3.5em;
+  }
+  span {
+    color: $color-primary-3;
   }
    code {
     @include code-style;
@@ -113,40 +148,58 @@ section:nth-of-type(odd) {
     a {
     @include link-style($color-dark, $color-primary-2);
     }
+    button {
+    @include button-style($color-dark, $color-primary-2);
+    }
 }
 section:nth-of-type(even){
     @include div-style($color-dark);
     li {
       color: $color-light;
     }
-   a {
+    a {
     @include link-style($color-light, $color-primary-2);
-  }
+    }
+    button {
+    @include button-style($color-light, $color-primary-3);
+    }
 
 }
 
 section:nth-of-type(4n+1){
   .h2-wrap {
     background-color: $color-primary-1;
+  &:hover {
+    background-color: $color-primary-2;
+  }
   }
 }
   
 section:nth-of-type(4n+2){
   .h2-wrap {
   background-color: $color-primary-2;
+  &:hover {
+    background-color: $color-light;
+  }
   }
 }
 
 section:nth-of-type(4n+3){
   .h2-wrap {
   background-color: $color-primary-3;
+  &:hover {
+    background-color: $color-primary-1;
+  }
   }
 }
 
 section:nth-of-type(4n+4){
   .h2-wrap {
   background-color: $color-light;
+  &:hover {
+    background-color: $color-primary-2;
   }
+}
 }
 
 

@@ -1,0 +1,42 @@
+h1 {
+animation-name: h1ColorCycle; 
+animation-duration:24s; 
+animation-direction:alternate; 
+animation-iteration-count:infinite; 
+
+-webkit-animation-name: h1ColorCycle; 
+-webkit-animation-duration:24s; 
+-webkit-animation-direction:alternate; 
+-webkit-animation-iteration-count:infinite; }	
+
+@keyframes h1ColorCycle 
+{
+0% {color: $color-light;} 
+25% {color: $color-primary-1;} 
+50% {color: $color-primary-2;}  
+75% {color: $color-primary-3;} 
+} 
+
+@-webkit-keyframes  h1ColorCycle 
+{
+0% {color: $color-light;} 
+25% {color: $color-primary-1;} 
+50% {color: $color-primary-2;}  
+75% {color: $color-primary-3;} 
+} 
+
+@-moz-keyframes  h1ColorCycle 
+{
+0% {color: $color-light;} 
+25% {color: $color-primary-1;} 
+50% {color: $color-primary-2;}  
+75% {color: $color-primary-3;} 
+}
+
+@-o-keyframes  h1ColorCycle 
+{
+0% {color: $color-light;} 
+25% {color: $color-primary-1;} 
+50% {color: $color-primary-2;}  
+75% {color: $color-primary-3;} 
+} 
