@@ -15,28 +15,35 @@ $color-light: #FCFEFC;
   color: $color-light;
   text-align: center;
 }
+
 @mixin h2-wrap{
 	width: 250px;
     height: 250px;
     border-radius: 200px;
-    margin: 0 auto 80px auto;
+    margin: 30px auto 80px auto;
 }
 
 @mixin h2-font{
   font-family: "freight-sans-pro", helvetica, sans-serif;
   font-weight: 600;
   font-size: 5em;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   line-height: 1.4;
   font-style: normal;
 }
 
-
+@mixin h3-font{
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 4em;
+  line-height: 1.4;
+  font-style: normal;
+}
 @mixin li-font {
 	font-family: "jubilat" serif;
-	font-size: 2.2em;
+	font-size: 2.5em;
 	line-height: 1.5;
-	font-weight: 400;
+	font-weight: 200;
 	font-style: normal;
 	color: $color-dark;
 	margin-bottom: 40px;
@@ -60,9 +67,12 @@ $color-light: #FCFEFC;
 	margin: 30px auto;
 }
 
-@mixin link-style ($color, $color-hover){
-	@include li-font;
+@mixin nav-link-style ($color, $color-hover){
+	font-family: "jubilat" serif;
 	font-size: 2.2em;
+	line-height: 1.5;
+	font-weight: 200;
+	font-style: normal;
 	color: $color;
 	text-decoration: none; 
 	display: block;
@@ -70,15 +80,19 @@ $color-light: #FCFEFC;
 		color: $color-hover;
 		text-decoration: none;
 	}
-
-	&:visited {
-		color: $color;
-	}
 }
 
+@mixin link-style ($color, $color-hover){
+	color: $color;
+	text-decoration: underline; 
+	&:hover {
+		color: $color-hover;
+		text-decoration: none;
+	}
+}
 @mixin code-style {
 	background-color: #CCC;
-	font-family: "courier new";
+	font-family: "courier new", monospace, serif;
 	padding: 20px;
 	display: block;
 	margin: 10px;
