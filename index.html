@@ -4,6 +4,7 @@
 		<title>Web Design Checklist</title>
 		<link href="stylesheets/checklist.css" type="text/css" rel="stylesheet">
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">s
 		<script src="//use.typekit.net/fxv0szo.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -24,6 +25,7 @@
 						<li><a href="#content">Content</a></li>
 						<li><a href="#grid">Grid</a></li>
 						<li><a href="#type">Typography</a></li>
+						<li><a href="#typekit" class="double">Adobe<br>TypeKit</a></li>
 						<li><a href="#color" class="double">Color<br>Theory</a></li>
 						<li><a href="#wireframes">Wireframes</a></li>
 						<li><a href="#styletiles">Style Tiles</a></li>
@@ -41,38 +43,38 @@
 			<div id="html" class="container">
 				<div class="h2-wrap"><h2>HTML</h2></div>
 				<ul>
-					<li>Your document starts like this:
+					<li>Start your document like this:
 						<code>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en-US"&gt;<br>&lt;head&gt;<br>&lt;title&gt;Web Design is Cool&lt;/title&gt;<br></code>
 					</li>
 					<li>
-						Links to your CSS stylesheets.
+						Link to your CSS stylesheets.
 						<code>&lt;link href="stylesheets/style.css" type="text/css" rel="stylesheet"&gt;<br></code>
 					</li>
 					<li>
-						Includes a meta tag for charset to declare the character encoding used of the page.
+						Include a meta tag for charset to declare the character encoding used of the page.
 						<code>&lt;meta charset="utf-8"&gt;<br></code>
 					</li>
 					<li>
-						Includes a meta tag for viewport to allow devices to read media queries (see <a href="rwd.html">responsive web design</a>).
+						Include a meta tag for viewport to allow devices to read media queries (see <a href="rwd.html">responsive web design</a>).
 						<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br></code>
 					</li>
 					<li>
-						Links to web fonts from services like Adobe TypeKit, myFonts, Webtype, etc. (Adobe Typekit example here).
+						Link to web fonts from services like Adobe TypeKit, myFonts, Webtype, etc. (Adobe Typekit example here).
 						<code>&lt;script src="//use.typekit.net/fxv0szo.js"&gt;&lt;/script&gt;
 						&lt;script&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;<br></code>
 					</li>
 					<li>
-						And finally, links to your .js file or jQuery hosting site (this can also be placed at the bottom of your body).
+						And finally, link to your .js file or jQuery hosting site (this can also be placed at the bottom of your body).
 						<code>&lt;scriptsrc="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;&lt;head&gt;</code>
 					</li>
-					<li>&lt;br&gt; tags are used for type purposes only.</li>
-					<li>&lt;alt&gt; tags are included on all images.</li>
-					<li>&lt;h1&gt; tag is only used once per page.</li>
-					<li>**Container div is wrapped around content!**</li>
-					<li>Characters are coded: &amp; &lsquo; &rsquo; &ldquo;, &rdquo;</li>
-					<li>Nothing resides between &lt;ul&gt; and &lt;li&gt;tags.</li>
-					<li>&lt;id&gt; tags are used only once.</li>
-					<li>HTML document is indented and spaced correctly. If you're using Sublime Text, try package HTML Beautify.</li>
+					<li>Use &lt;br&gt; tags for type purposes only.</li>
+					<li>Include &lt;alt&gt; tags on all images.</li>
+					<li>Only use &lt;h1&gt; tag is once per page.</li>
+					<li>Wrap a container div around content!</li>
+					<li>Code all characters&colon; &amp; &lsquo; &rsquo; &ldquo;, &rdquo;</li>
+					<li>Make sure nothing resides between &lt;ul&gt; and &lt;li&gt;tags.</li>
+					<li>Only use &lt;id&gt; tags once.</li>
+					<li>Indent and space your HTML document correctly. If you're using Sublime Text, try the package HTML Beautify.</li>
 				</ul>
 				<a href="#top"><button>Back to top</button></a>
 			</div>
@@ -82,10 +84,10 @@
 				<div class="h2-wrap"><h2>CSS</h2>
 				</div>
 				<ul>
-					<li>A CSS reset or normalize file is used.</li>
-					<li>Class and id tags are labeled based on content, not style.</li>
-					<li>Stylesheet is indented and spaced correctly.</li>
-					<li>Stylesheet is organized into sections and clearly labeled with comments.</li>
+					<li>Use a CSS reset or normalize file.</li>
+					<li>Label slass and id tags based on content, not style.</li>
+					<li>Indent and space stylesheet correctly.</li>
+					<li>Organize stylesheet into sections and label the sections with comments.</li>
 				</ul>
 			</div>
 		<a href="#top"><button>Back to top</button></a>
@@ -94,11 +96,11 @@
 			<div id="sass" class="container">
 				<div class="h2-wrap"><h2>Sass</h2></div>
 				<ul>
-					<li>Variables and Mixins are labeled based on content, not style.</li>
-					<li>Imported files begin with an underscore. </li>
-					<li>&ldquo;Sass --watch&rdquo; is always turned on when working in .scss files.</li>
-					<li>Nesting is used cautiously to avoid specificity issues&mdash;if you don't need to nest, don't.
-						<li><a href="http://www.thesassway.com/beginner/the-inception-rule">The Inception Rule</a> is followed&mdash;no more than four levels deep!.</li>
+					<li>Label Variables and Mixins based on content, not style.</li>
+					<li>Begin imported files with an underscore. </li>
+					<li>Always turn on &ldquo;Sass --watch&rdquo; when working in .scss files.</li>
+					<li>Use nesting cautiously to avoid specificity issues&mdash;if you don't need to nest, don't.
+					<li>Follow the <a href="http://www.thesassway.com/beginner/the-inception-rule">The Inception Rule</a>&mdash;no more than four levels deep!.</li>
 					</ul>
 				</div>
 				<a href="#top"><button>Back to top</button></a>
@@ -107,10 +109,12 @@
 				<div id="js" class="container">
 				<div class="h2-wrap"><h2>jQuery</h2></div>
 				<ul>
-					<li><a href="">Text</a></li>
-					<li><a href="">Text</a></li>
-					<li><a href="">Text</a></li>
-					<li><a href="">Text</a></li>
+					<li>Link to the jQuery hosting site in the head &lpar;or bottom of the body&rpar; of your HTML.
+						<code>&lt;scriptsrc="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;&lt;head&gt;</code>
+					</li>
+					<li>Place your javascript/jquery in a separate file and link to the file at the bottom of your body tag in HTML, to allow all HTML and CSS to load before your javascript/jquery.</li>
+					<li>If you only have a few lines of jquery/js, you can place it directly in your HTML, at the bottom of the body tag, using a &lt;script&rt; tag.</li>
+					<li>Use comments whenever possible to explain (to your future self or others) what's going on in your jquery/js.</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -120,10 +124,17 @@
 				<div class="h2-wrap"><h2>RWD</h2></div>
 				<h3>Responsive Web Design</h3>
 				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<li>First things first. Add a meta tag for viewport to your HTML to allow devices to read media queries (see <a href="rwd.html">responsive web design</a>).
+					<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br></code>
+					</li>
+					<li>Use the &ldquo;mobile-first&ldquo; &lpar;ahem, global-first&rpar; approach when designing. Meaning, design for your smallest screen size without adding a media query. Why? If someone&rsquo;s browser doesn&rsquo;t accept media queries, they will at least be able to see this version of your site, instead of a sad, un-styled HTML page.</li>
+					<li>Use ems instead of pixels for your type! If you like easy math like me, you can add <code>font-size: 62.5&percnt;&semi;<br></code> to your body or html styles. Then 1em = 10 pixels.</li>
+					<li>Try to keep anything width-related in percents, and anything height-related in pixels. Exception: max-width must be in pixels. Here's an example of the container elements &lpar;always a good idea&rpar; I use: 
+						<code>.container&lbrace; max-width&colon; 1000px&semi; width:85&percnt;&semi;	margin&colon; 0 auto&semi;	overflow&colon; hidden&semi;&rbrace;<br></code>
+					</li>
+					<li>Create re-sizable images by adding the following code to your global CSS&colon;<code>.img&lbrace; max-width&colon; 100&percnt;&semi;&rbrace;<br></code>
+					</li>
+					<li>Want more? Checkout Sam Kapila's awesome <a href="http://samkap.github.io/projects/tiy-rwd/">checklist</a> for responsive tips, resources, and examples.
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -133,12 +144,12 @@
 				<div class="h2-wrap"><h2 class="double-2">Git/<br>Terminal</h2></div>
 				<ul>
 					<li>Work locally!</li>
-					<li>All work is done on a branch until site reaches a version that can be live and pushed to master and gh-pages branches.</li>
-					<li>Site is pushed to GitHub as changes are made.</li>
-					<li>Commit messages are clear and expressive.</li>
-					<li>Gh-pages are updated with each commit.</li>
-					<li>Descriptive README files are included in each repository.</li>
-					<li>&ldquo;Sass --watch&rdquo; is always turned on when working in .scss files.</li>
+					<li>Work on a branch until site reaches a version that can be live and pushed to master and gh-pages branches.</li>
+					<li>Push site to GitHub as changes are made.</li>
+					<li>Write clear and expressive commit messages.</li>
+					<li>Update gh-pages with each commit.</li>
+					<li>Include descriptive README files in each repository.</li>
+					<li>Always turn on &ldquo;Sass --watch&rdquo; when working in .scss files.</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -148,11 +159,11 @@
 				<div class="h2-wrap"><h2 class="double-2">Tech Specs</h2></div>
 				<h3>Technical Specifications and File Management</h3>
 				<ul>
-					<li>No spaces are used in any file name, folder, or anything. ever. never.</li>
-					<li>First html file is labeled index.html and in the root folder.</li>
-					<li>Stylesheets, .js files, and asset files are in separate folders.</li>
-					<li>Files are organized and labeled clearly and based on content.</li>
-					<li>All unnecessary files are removed.</li>
+					<li>Dont' use spaces in any file name, folder, or anything. ever. never.</li>
+					<li>Label your first html file index.html and placed it in the root folder.</li>
+					<li>Place stylesheets, .js files, and asset files in separate folders.</li>
+					<li>Organize files and label them based on content.</li>
+					<li>Remove all unnecessary files.</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -161,10 +172,10 @@
 			<div id="content" class="container">
 				<div class="h2-wrap"><h2>Content</h2></div>
 				<ul>
-					<li>Content belongs to you OR</li>
-					<li>The author has been credited.</li>
-					<li>Content is clearly written and easy to understand.</li>
-					<li>Content is the focus of the site.</li>
+					<li>Does the content belong to you?</li>
+					<li>OR is author credited?</li>
+					<li>Is the content clearly written and easy to understand?</li>
+					<li>Is the content the focus of the site?</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -173,9 +184,9 @@
 			<div id="grid" class="container">
 				<div class="h2-wrap"><h2>Grid</h2></div>
 				<ul>
-					<li>Site is &#40;mostly&#41; aligned to a grid.</li>
-					<li>There is a sufficient amount of whitespace between elements of the page.</li>
-					<li><a href="https://www.creativebloq.com/graphic-design/designer-s-guide-gestalt-theory-10134960">Gestalt Theory Principles</a> were considered with the overall design.</li>
+					<li>Is the site &#40;mostly&#41; aligned to a grid?</li>
+					<li>Is there a sufficient amount of whitespace between elements of the page?</li>
+					<li>IMPORTANT&colon; Consider<a href="https://www.creativebloq.com/graphic-design/designer-s-guide-gestalt-theory-10134960">Gestalt Theory Principles</a>with the overall design.</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -185,14 +196,15 @@
 				<div class="h2-wrap"><h2 class="small">Typography</h2></div>
 				<ul>
 					<li>Refer to <a href="http://www.practicaltypography.com">Butterick's Practical Typography</a> for all things typography.</li>
-					<li>Typefaces are well considered, starting with *body type. There are several sites and articl*es to help you find a good typographic pair. Try these: <a href="https://www.creativebloq.com/typography/20-perfect-type-pairings-3132120">Creative Bloq</a>, <a href="https://www.typegenius.com">Type Genius</a>, &#40;or you can always <a href="http://www.lmgtfy.com/?q=type+pairing">Google it</a>&#41;.</li>
-					<li>Heading and body type have matching or similar x-heights.</li>
-					<li>Type effectively sets the tone for the content.</li>
-					<li>No more than two font families are used. One superfamily is also good way to go!</li>
-					<li>A max-width is set for type allowing 45-90 characters per line. Use this line &#40;in your font&#41; as a guide (52 characters):<br><br><span>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</span></li>
-					<li>The following five properties are styled for each typographic element &#40;you can also use <a href="http://www.cssfontstack.com">CSS Font Stack&#41;</a>:</li>
+					<li>Consider typefaces well, starting with body type. There are several sites and articles to help you find a good typographic pair. Try these: <a href="https://www.creativebloq.com/typography/20-perfect-type-pairings-3132120">Creative Bloq</a>, <a href="https://www.typegenius.com">Type Genius</a>, &#40;or you can always <a href="http://www.lmgtfy.com/?q=type+pairing">Google it</a>&#41;.</li>
+					<li>Choose heading and body type with matching or similar x-heights.</li>
+					<li>Use type to effectively set the tone for the content.</li>
+					<li>Do not use more than two font families. One superfamily is also good way to go!</li>
+					<li>Use ems instead of pixels for your type for greater accessibility. You can add <code>font-size: 62.5&percnt;&semi;<br></code> to your body or html styles. Then 1em = 10 pixels.</li>
+					<li>Set a max-width for type allowing 45-90 characters per line. Use this line &#40;in your font&#41; as a guide (52 characters):<br><br><span>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz</span></li>
+					<li>Include the following five properties for each typographic element &#40;you can also use <a href="http://www.cssfontstack.com">CSS Font Stack&#41;</a>:</li>
 					<li class="indent">Font-family, including second, third and fourth options.</li>
-					<li class="indent">Font-size &#40;minimum 16px for body type&#41;.</li>
+					<li class="indent">Font-size&colon; minimum 16px &lpar;or 1.6ems&rpar; for body type.</li>
 					<li class="indent">Line-height &#40;140&#37; minimum, but ultimately based on font-size.&#41;.</li>
 					<li class="indent">Color (see <a href="#color">Color Theory</a>).</li>
 					<li class="indent">Max-width (see above).</li>
@@ -201,12 +213,29 @@
 			<a href="#top"><button>Back to top</button></a>
 		</section>
 		<section>
+			<div id="typekit" class="container">
+				<div class="h2-wrap"><h2 class="double-2">Adobe TypeKit</h2></div>
+				<ul>
+					<li>Adobe Typekit is just one of several web-font services, but they all will work in a similar way as explained here.</li>
+					<li>First, create a kit by selecting &lsquo;Kits&rsquo;, then &lsquo;Create new kit&rsquo;. 
+					<img src="../assets/createkit.png" alt "create kit">Add the domain of the site where you'll be using the web fonts. For example, my GitHub kit uses the domain <a href="https://www.michellechild.github.io">michellechild.github.io</a> Note: <a href="https://www.codepen.com">Codepen</a> accounts use s.codepen.io.</li>
+					<li>Find a font. Select &lsquo;Use fonts&rsquo;, then the &lsquo;Web&rsquo; tab. Add to your existing kit or create a new kit here.<img src="../assets/usefont.gif" alt "use font"></li>
+					<li>The Typekit Editor screen will appear. <img src="../assets/typekiteditor.gif" alt "typekit editor">Select the weights and styles you'd like to use on your site, but pay attention to the Kit Size at the bottom of the screen. Exceeding 150K will affect your site&rsquo;s loading time.</li>
+					<li>Keep the default language support unless you need to use all characters.</li>
+					<li>The links at the bottom-right of each section will give you the css syntax for the font and each weight and style.<img src="../assets/weightsandstyles.gif" alt "weights and styles">You can also save a font stack under CSS stack, which will be automatically be applied when using the font.</li>
+					<li>When you have the weights and styles chosen, select &lsquo; Publish&rsquo;.</li>
+					<li>Almost finished! Now select &lsquo;Embed Code&rsquo; on the top righthand corner. Place this code in your the head of your html.<img src="../assets/jscode.gif" alt "js code"></li>
+				</ul>
+			</div>
+			<a href="#top"><button>Back to top</button></a>
+		</section>
+		<section>
 			<div id="color" class="container">
 				<div class="h2-wrap"><h2 class="double-2">Color<br>Theory</h2></div>
 				<ul>
-					<li>Colors reflect the message of your content.</li>
-					<li>The <a href="https://leaverou.github.io/contrast-ratio/">color contrast</a> of your type and background colors has passed the test.</li>
-					<li>The site has been tested for <a href="https://colorfilter.wickline.org/">color blindess</a> compatibility.</li>
+					<li>Use color to reflect the message of your content.</li>
+					<li>Use the <a href="https://leaverou.github.io/contrast-ratio/">contrast ratio</a> to test your type color and background color contrast level.</li>
+					<li>Test your site for <a href="https://colorfilter.wickline.org/">color blindess</a> compatibility.</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -215,10 +244,9 @@
 			<div id="wireframes" class="container">
 				<div class="h2-wrap"><h2 class="small">Wireframes</h2></div>
 				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<li>Set up twelve column grid in the background of your wireframe. Even if you don't use all 12 columns, this will serve as your 2, 3, 4, or 6 column grid as well. You can download a template, or create your own.</li>
+					<li>Always wireframe in grayscale. This is about layout, not color.</a></li>
+					<li>If you don't like wireframing in Photoshop, checkout <a href="https://www.omnigroup.com/">Omnigraffle</a>,<a href="https://www.balsamiq.com/products/mockups/">Balsamiq</a>, or choose your own from Creative Bloq&rsquo;s <a href="https://www.creativebloq.com/wireframes/top-wireframing-tools-11121302">top 20 wireframing tools</a></li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -227,7 +255,7 @@
 			<div id="styletiles" class="container">
 				<div class="h2-wrap"><h2 class="double-2">Style<br>Tiles</h2></div>
 				<ul>
-					<li>Checkout these resources on using Style Tiles and Element Collages to test designs before creating full design comps:</li>					
+					<li>Checkout these resources on using Style Tiles and Element Collages to test designs before creating full design comps:</li>	
 					<li><a href="https://www.styletil.es/">Samantha Warren's Style Tiles</a>.</li>
 					<li><a href="https://www.alistapart.<com/article/style-tiles-and-how-they-work">Style Tiles and How They Work</a>, also by Samantha Warren.</li>
 					<li><a href="https://www.webdesign.tutsplus.com/articles/style-tiles-an-alternative-to-full-design-comps--webdesign-7232">Style Tiles: An Alternative to Full Design Comps</a>.</li>
@@ -241,10 +269,10 @@
 			<div id="images" class="container">
 				<div class="h2-wrap"><h2 class="double-2">Saving<br>Images</h2></div>
 				<ul>
-					<li>Images are sized proportionally.</li>
-					<li>Images are proportionally and carefully cropped to fit size specifications.</li>
-					<li>File types were considered and chosen: .png, .jpg, .gif, or .svg.</li>
-					<li>Images are saved using Save For Web on Adobe Illustrator or Photoshop.</li>
+					<li>Size images proportionally.</li>
+					<li>Carefully proportion and crop images to fit size specifications.</li>
+					<li>Consider the different file types and choose the <a href="https://www.1stwebdesigner.com/design/different-image-formats/">best</a> one: .png, .jpg, .gif, or .svg.</li>
+					<li>Use &lsquo;Save For Web&rsquo; on Adobe Illustrator or Photoshop.</li>
 				</ul>
 			</div>
 			<a href="#top"><button>Back to top</button></a>
@@ -254,7 +282,9 @@
 				<div class="h2-wrap"><h2 class="small">Accessibility</h2></div>
 				<ul>
 					<li>Site loads quickly.</li>
-					<li>Site is responsive.</li>
+					<li>Site is responsive, but includes a global version for browsers that do not support media queries.</li>
+					<li>Site includes a viewport tag for mobile devices (see <a href="#rwd">Responsive Web Design</a>.</li>
+					<li>Use ems instead of pixels for your type for greater accessibility. You can add <code>font-size: 62.5&percnt;&semi;<br></code> to your body or html styles. Then 1em = 10 pixels.</li>
 					<li>Consult the <a href="http://www.a11yproject.com/checklist.html"> A11y project usability checklist</a>.</li>
 				</ul>
 			</div>
@@ -265,7 +295,7 @@
 				<div class="h2-wrap"><h2>Validate</h2></div>
 				<ul>
 					<li>Consult <a href="http://caniuse.com/">Can I Use?</a> site.</li>
-					<li>Site was tested on different browswers and screens.</li>
+					<li>Test the site on different browswers and screens.</li>
 					<li>Validate that sucker!</li>
 					<li class="indent"><a href="http://validator.w3.org/">HTML Validator</a></li>
 					<li class="indent"><a href="http://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
