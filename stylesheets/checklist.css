@@ -61,6 +61,18 @@ html {
   margin: 0 auto;
   overflow: hidden; }
 
+.infinite-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+
+.section {
+  display: none; }
+
+.show-section {
+  display: block; }
+
 .clear {
   clear: both; }
 
@@ -349,7 +361,7 @@ section:nth-of-type(even) {
     section:nth-of-type(even) a:hover {
       color: #F45664;
       text-decoration: none; }
-  section:nth-of-type(even) button {
+  section:nth-of-type(even) a.button {
     font-family: "jubilat" serif;
     font-size: 2.5em;
     line-height: 1.5;
@@ -364,7 +376,7 @@ section:nth-of-type(even) {
     max-width: 200px;
     margin: 50px auto 0 auto;
     outline: none; }
-    section:nth-of-type(even) button:hover {
+    section:nth-of-type(even) a.button:hover {
       border: 3px solid #D4DE44;
       color: #D4DE44;
       text-decoration: none; }
