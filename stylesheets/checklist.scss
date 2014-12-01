@@ -160,7 +160,7 @@ section:nth-of-type(even){
     a {
     @include link-style($color-light, $color-primary-2);
     }
-    button {
+    a.button {
     @include button-style($color-light, $color-primary-3);
     }
 

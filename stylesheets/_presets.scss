@@ -18,6 +18,21 @@ html {
   overflow: hidden;
 }
 
+.infinite-container {
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 99;
+}
+
+.section {
+  display: none;
+}
+
+.show-section {
+  display: block;
+}
+
 .clear{
   clear: both;
 }
