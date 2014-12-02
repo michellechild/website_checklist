@@ -106,8 +106,8 @@ $color-light: #FCFEFC;
 
 @mixin button-style ($color, $color-hover){
 	font-family: "jubilat" serif;
-	font-size: 2.5em;
-	line-height: 1.5;
+	font-size: 2.2em;
+	line-height: 1;
 	font-weight: 400;
 	font-style: normal;
 	border: 3px solid $color;
@@ -116,9 +116,10 @@ $color-light: #FCFEFC;
 	background-color: transparent;
 	padding: 22px;
 	display: block;
-    max-width: 200px;
+    max-width: 159px;
     margin: 50px auto 0 auto;
     outline: none;
+    text-decoration: none;
 
     &:hover {
     border: 3px solid $color-hover;

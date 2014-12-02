@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="//use.typekit.net/fxv0szo.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="stylesheets/scrollappear.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/animatescroll.js"></script>
 	</head>
 	<body>
 		<header>
@@ -16,23 +16,23 @@
 				<h1>The Web Designer’s Checklist <!-- <img src="assets/illustration2.png" alt="circle illustration"> --></h1>
 				<nav>
 					<ul>
-						<li><a href="#html">HTML</a></li>
-						<li><a href="#css">CSS</a></li>
-						<li><a href="#sass">Sass</a></li>
-						<li><a href="#js">jQuery</a></li>
-						<li><a href="#rwd" class="double">Responsive Web Design</a></li>
-						<li><a href="#git" class="double">GitHub/<br>Terminal</a></li>
-						<li><a href="#tech-specs">Tech Specs</a></li>
-						<li><a href="#content">Content</a></li>
-						<li><a href="#grid">Grid</a></li>
-						<li><a href="#type">Typography</a></li>
-						<li><a href="#typekit" class="double">Adobe<br>TypeKit</a></li>
-						<li><a href="#color" class="double">Color<br>Theory</a></li>
-						<li><a href="#wireframes">Wireframes</a></li>
-						<li><a href="#styletiles">Style Tiles</a></li>
-						<li><a href="#images" class="double">Saving<br>Images</a></li>
-						<li><a href="#accessibility">Accessibility</a></li>
-						<li><a href="#validate">Validate</a></li>
+						<li><a href="#" onclick="$('#html').animatescroll();">HTML</a></li>
+						<li><a href="#" onclick="$('#css').animatescroll();">CSS</a></li>
+						<li><a href="#" onclick="$('#sass').animatescroll();">Sass</a></li>
+						<li><a href="#" onclick="$('#js').animatescroll();">jQuery</a></li>
+						<li><a href="#" onclick="$('#rwd').animatescroll();" class="double">Responsive Web Design</a></li>
+						<li><a href="#" onclick="$('#git').animatescroll();" class="double">GitHub/<br>Terminal</a></li>
+						<li><a href="#" onclick="$('#tech').animatescroll();">Tech Specs</a></li>
+						<li><a href="#" onclick="$('#content').animatescroll();">Content</a></li>
+						<li><a href="#" onclick="$('#grid').animatescroll();">Grid</a></li>
+						<li><a href="#" onclick="$('#type').animatescroll();">Typography</a></li>
+						<li><a href="#" onclick="$('#typekit').animatescroll();" class="double">Adobe<br>TypeKit</a></li>
+						<li><a href="#" onclick="$('#color').animatescroll();" class="double">Color<br>Theory</a></li>
+						<li><a href="#" onclick="$('#wireframes').animatescroll();">Wireframes</a></li>
+						<li><a href="#" onclick="$('#styletiles').animatescroll();">Style Tiles</a></li>
+						<li><a href="#" onclick="$('#images').animatescroll();" class="double">Saving<br>Images</a></li>
+						<li><a href="#" onclick="$('#accessibility').animatescroll();">Accessibility</a></li>
+						<li><a href="#" onclick="$('#validate').animatescroll();">Validate</a></li>
 					</ul>
 					<br>
 					<ul>
@@ -40,7 +40,6 @@
 				</nav>
 			</div>
 		</header>
-		<div class="infinite-container">
 			<section>
 				<div id="html" class="container">
 					<div class="h2-wrap"><h2>HTML</h2></div>
@@ -78,7 +77,7 @@
 						<li>Only use &lt;id&gt; tags once.</li>
 						<li>Indent and space your HTML document correctly. If you're using Sublime Text, try the package HTML Beautify.</li>
 					</ul>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 				</div>
 			</section>
 			<section>
@@ -92,7 +91,7 @@
 						<li>Organize stylesheet into sections and label the sections with comments.</li>
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
 				<div id="sass" class="container">
@@ -105,7 +104,7 @@
 							<li>Follow the <a href="http://www.thesassway.com/beginner/the-inception-rule">The Inception Rule</a>&mdash;no more than four levels deep!.</li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#top" class="button">Back to top</a>
 				</section>
 				<section>
 					<div id="js" class="container">
@@ -139,7 +138,7 @@
 						<li>Want more? Checkout Sam Kapila's awesome <a href="http://samkap.github.io/projects/tiy-rwd/">checklist</a> for responsive tips, resources, and examples.
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
 				<div id="git" class="container">
@@ -154,10 +153,10 @@
 						<li>Always turn on &ldquo;Sass --watch&rdquo; when working in .scss files.</li>
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
-				<div id="tech-specs" class="container">
+				<div id="tech" class="container">
 					<div class="h2-wrap"><h2 class="double-2">Tech Specs</h2></div>
 					<h3>Technical Specifications and File Management</h3>
 					<ul>
@@ -168,7 +167,7 @@
 						<li>Remove all unnecessary files.</li>
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
 				<div id="content" class="container">
@@ -180,7 +179,7 @@
 						<li>Is the content the focus of the site?</li>
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
 				<div id="grid" class="container">
@@ -191,7 +190,7 @@
 						<li>IMPORTANT&colon; Consider<a href="https://www.creativebloq.com/graphic-design/designer-s-guide-gestalt-theory-10134960">Gestalt Theory Principles</a>with the overall design.</li>
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
 				<div id="type" class="container">
@@ -212,7 +211,7 @@
 						<li class="indent">Max-width (see above).</li>
 					</ul>
 				</div>
-				<a class="button" href="#top">Back to top</a>
+				<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 			</section>
 			<section>
 				<div id="typekit" class="container">
@@ -229,7 +228,7 @@
 							<li>Almost finished! Now select &lsquo;Embed Code&rsquo; on the top righthand corner. Place this code in your the head of your html.<img src="../assets/jscode.gif" alt="js code"></li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 				</section>
 				<section>
 					<div id="color" class="container">
@@ -240,7 +239,7 @@
 							<li>Test your site for <a href="https://colorfilter.wickline.org/">color blindess</a> compatibility.</li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 				</section>
 				<section>
 					<div id="wireframes" class="container">
@@ -251,7 +250,7 @@
 							<li>If you don't like wireframing in Photoshop, checkout <a href="https://www.omnigroup.com/">Omnigraffle</a>,<a href="https://www.balsamiq.com/products/mockups/">Balsamiq</a>, or choose your own from Creative Bloq&rsquo;s <a href="https://www.creativebloq.com/wireframes/top-wireframing-tools-11121302">top 20 wireframing tools</a></li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 				</section>
 				<section>
 					<div id="styletiles" class="container">
@@ -265,7 +264,7 @@
 							<li>A comparison of the two: <a href="https://www.clearleft.com/thinks/visualdesignexplorations/">Visual Design Explorations</a>.</li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 				</section>
 				<section>
 					<div id="images" class="container">
@@ -277,7 +276,7 @@
 							<li>Use &lsquo;Save For Web&rsquo; on Adobe Illustrator or Photoshop.</li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>
 				</section>
 				<section>
 					<div id="accessibility" class="container">
@@ -290,7 +289,8 @@
 							<li>Consult the <a href="http://www.a11yproject.com/checklist.html"> A11y project usability checklist</a>.</li>
 						</ul>
 					</div>
-					<a class="button" href="#top">Back to top</a>		</section>
+					<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>		
+				</section>
 					<section>
 						<div id="validate" class="container">
 							<div class="h2-wrap"><h2>Validate</h2></div>
@@ -302,12 +302,7 @@
 								<li class="indent"><a href="http://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
 							</ul>
 						</div>
-						<a class="button" href="#top">Back to top</a>		</section>
+						<a href="#" onclick="$('#top').animatescroll();" class="button">Back to top</a>		</section>
 					</div>
-					<script type="text/javascript">
-					$('.infinite-container').ScrollAppear({
-					ElementAffect: '.section',
-					AddClass: 'show-section'
-					});</script>
 				</body>
 			</html>

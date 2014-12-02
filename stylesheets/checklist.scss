@@ -145,11 +145,11 @@ section {
 
 section:nth-of-type(odd) {
     @include div-style($color-light);
+    a.button {
+    @include button-style($color-dark, $color-primary-2);
+    }
     a {
     @include link-style($color-dark, $color-primary-2);
-    }
-    button {
-    @include button-style($color-dark, $color-primary-2);
     }
 }
 section:nth-of-type(even){
@@ -157,13 +157,12 @@ section:nth-of-type(even){
     li {
       color: $color-light;
     }
-    a {
+     a {
     @include link-style($color-light, $color-primary-2);
     }
     a.button {
     @include button-style($color-light, $color-primary-3);
     }
-
 }
 
 section:nth-of-type(4n+1){
