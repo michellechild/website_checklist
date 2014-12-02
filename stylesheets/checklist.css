@@ -322,16 +322,10 @@ section:nth-of-type(odd) {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #FCFEFC; }
-  section:nth-of-type(odd) a {
-    color: #242224;
-    text-decoration: underline; }
-    section:nth-of-type(odd) a:hover {
-      color: #F45664;
-      text-decoration: none; }
-  section:nth-of-type(odd) button {
+  section:nth-of-type(odd) a.button {
     font-family: "jubilat" serif;
-    font-size: 2.5em;
-    line-height: 1.5;
+    font-size: 2.2em;
+    line-height: 1;
     font-weight: 400;
     font-style: normal;
     border: 3px solid #242224;
@@ -340,11 +334,18 @@ section:nth-of-type(odd) {
     background-color: transparent;
     padding: 22px;
     display: block;
-    max-width: 200px;
+    max-width: 159px;
     margin: 50px auto 0 auto;
-    outline: none; }
-    section:nth-of-type(odd) button:hover {
+    outline: none;
+    text-decoration: none; }
+    section:nth-of-type(odd) a.button:hover {
       border: 3px solid #F45664;
+      color: #F45664;
+      text-decoration: none; }
+  section:nth-of-type(odd) a {
+    color: #242224;
+    text-decoration: underline; }
+    section:nth-of-type(odd) a:hover {
       color: #F45664;
       text-decoration: none; }
 
@@ -363,8 +364,8 @@ section:nth-of-type(even) {
       text-decoration: none; }
   section:nth-of-type(even) a.button {
     font-family: "jubilat" serif;
-    font-size: 2.5em;
-    line-height: 1.5;
+    font-size: 2.2em;
+    line-height: 1;
     font-weight: 400;
     font-style: normal;
     border: 3px solid #FCFEFC;
@@ -373,9 +374,10 @@ section:nth-of-type(even) {
     background-color: transparent;
     padding: 22px;
     display: block;
-    max-width: 200px;
+    max-width: 159px;
     margin: 50px auto 0 auto;
-    outline: none; }
+    outline: none;
+    text-decoration: none; }
     section:nth-of-type(even) a.button:hover {
       border: 3px solid #D4DE44;
       color: #D4DE44;
