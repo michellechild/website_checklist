@@ -150,7 +150,7 @@ h1 {
   margin: 0 auto 80px auto;
   color: #242224;
   background-color: #F45664;
-  padding: 100px 0; }
+  padding: 150px 0; }
   h1:hover {
     background-color: #A4C2E4;
     transition: 2s ease all; }
@@ -404,6 +404,9 @@ section:nth-of-type(4n+4) .h2-wrap {
     background-color: #F45664; }
 
 @media screen and (min-width: 30em) {
+  h1 {
+    padding: 100px 0; }
+
   nav li {
     float: left;
     width: 48%; }
@@ -420,6 +423,9 @@ section:nth-of-type(4n+4) .h2-wrap {
   nav li:nth-of-type(4n+4) {
     width: 48%; } }
 @media screen and (min-width: 40em) {
+  h1 {
+    padding: 75px 0; }
+
   nav li {
     float: left;
     width: 32%; }
@@ -436,6 +442,9 @@ section:nth-of-type(4n+4) .h2-wrap {
   nav li:nth-of-type(4n+4) {
     width: 32%; } }
 @media screen and (min-width: 64em) {
+  h1 {
+    padding: 50px 0; }
+
   nav li {
     float: left;
     width: 20%; }
