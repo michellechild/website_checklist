@@ -83,16 +83,6 @@ img {
   width: 100%; }
 
 h1 {
-  font-family: "freight-sans-pro", helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 6em;
-  letter-spacing: 0.1em;
-  line-height: 1.4;
-  font-style: normal;
-  color: #FCFEFC;
-  text-align: center; }
-
-h1 {
   animation-name: h1ColorCycle;
   animation-duration: 24s;
   animation-direction: alternate;
@@ -104,40 +94,40 @@ h1 {
 
 @keyframes h1ColorCycle {
   0% {
-    color: #FCFEFC; }
+    background-color: #FCFEFC; }
   25% {
-    color: #A4C2E4; }
+    background-color: #A4C2E4; }
   50% {
-    color: #F45664; }
+    background-color: #F45664; }
   75% {
-    color: #D4DE44; } }
+    background-color: #D4DE44; } }
 @-webkit-keyframes h1ColorCycle {
   0% {
-    color: #FCFEFC; }
+    background-color: #FCFEFC; }
   25% {
-    color: #A4C2E4; }
+    background-color: #A4C2E4; }
   50% {
-    color: #F45664; }
+    background-color: #F45664; }
   75% {
-    color: #D4DE44; } }
+    background-color: #D4DE44; } }
 @-moz-keyframes h1ColorCycle {
   0% {
-    color: #FCFEFC; }
+    background-color: #FCFEFC; }
   25% {
-    color: #A4C2E4; }
+    background-color: #A4C2E4; }
   50% {
-    color: #F45664; }
+    background-color: #F45664; }
   75% {
-    color: #D4DE44; } }
+    background-color: #D4DE44; } }
 @-o-keyframes h1ColorCycle {
   0% {
-    color: #FCFEFC; }
+    background-color: #FCFEFC; }
   25% {
-    color: #A4C2E4; }
+    background-color: #A4C2E4; }
   50% {
-    color: #F45664; }
+    background-color: #F45664; }
   75% {
-    color: #D4DE44; } }
+    background-color: #D4DE44; } }
 /*
   ========================================
   GLOBAL Header / Nav
@@ -147,12 +137,22 @@ header {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #242224; }
+  background-color: #242224;
+  padding-top: 0; }
 
 h1 {
-  margin: 80px auto; }
+  font-family: "freight-sans-pro", helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 5.5em;
+  line-height: 1.4;
+  font-style: normal;
+  text-align: center;
+  margin: 0 auto 80px auto;
+  color: #242224;
+  background-color: #F45664;
+  padding: 100px 0; }
   h1:hover {
-    color: #A4C2E4;
+    background-color: #A4C2E4;
     transition: 2s ease all; }
 
 nav li {
@@ -271,7 +271,7 @@ section .h2-wrap {
     transform: rotateY(360deg); }
 section h2 {
   font-family: "freight-sans-pro", helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 5em;
   letter-spacing: 0.1em;
   line-height: 1.4;
@@ -280,7 +280,7 @@ section h2 {
   padding-top: 90px; }
 section h3 {
   font-family: "freight-sans-pro", helvetica, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 4em;
   line-height: 1.4;
   font-style: normal;

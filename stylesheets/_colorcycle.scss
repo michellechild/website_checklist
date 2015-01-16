@@ -11,32 +11,32 @@ animation-iteration-count:infinite;
 
 @keyframes h1ColorCycle 
 {
-0% {color: $color-light;} 
-25% {color: $color-primary-1;} 
-50% {color: $color-primary-2;}  
-75% {color: $color-primary-3;} 
+0% {background-color: $color-light;} 
+25% {background-color: $color-primary-1;} 
+50% {background-color: $color-primary-2;}  
+75% {background-color: $color-primary-3;} 
 } 
 
 @-webkit-keyframes  h1ColorCycle 
 {
-0% {color: $color-light;} 
-25% {color: $color-primary-1;} 
-50% {color: $color-primary-2;}  
-75% {color: $color-primary-3;} 
+0% {background-color: $color-light;} 
+25% {background-color: $color-primary-1;} 
+50% {background-color: $color-primary-2;}  
+75% {background-color: $color-primary-3;} 
 } 
 
 @-moz-keyframes  h1ColorCycle 
 {
-0% {color: $color-light;} 
-25% {color: $color-primary-1;} 
-50% {color: $color-primary-2;}  
-75% {color: $color-primary-3;} 
+0% {background-color: $color-light;} 
+25% {background-color: $color-primary-1;} 
+50% {background-color: $color-primary-2;}  
+75% {background-color: $color-primary-3;} 
 }
 
 @-o-keyframes  h1ColorCycle 
 {
-0% {color: $color-light;} 
-25% {color: $color-primary-1;} 
-50% {color: $color-primary-2;}  
-75% {color: $color-primary-3;} 
+0% {background-color: $color-light;} 
+25% {background-color: $color-primary-1;} 
+50% {background-color: $color-primary-2;}  
+75% {background-color: $color-primary-3;} 
 } 
