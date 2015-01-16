@@ -11,12 +11,17 @@
 
 header {
   @include div-style($color-dark);
+  padding-top: 0;
 }
 
 h1 {
-  margin: 80px auto;
+  @include h1-font;
+  margin: 0 auto 80px auto;
+  color: $color-dark;
+  background-color: $color-primary-2;
+  padding: 100px 0;
   &:hover {
-    color: $color-primary-1;
+    background-color: $color-primary-1;
     transition: 2s ease all;
   }
 }
